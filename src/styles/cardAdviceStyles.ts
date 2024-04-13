@@ -1,7 +1,7 @@
 import { Styles } from "../models/models"
 
 const staticStyles: Styles = {
-  "card": "relative bg-color-lightest rounded-lg justify-items-center content-center grid w-4/5 h-full p-5 ",
+  "card": "relative bg-color-lightest rounded-lg justify-items-center content-center grid w-4/5 h-full p-5",
   "adviceNumber": "text-green-color font-manrope tracking-widest text-center text-xs mb-4",
   "credits": "font-manrope text-white",
   "tittle": "font-manrope text-center",

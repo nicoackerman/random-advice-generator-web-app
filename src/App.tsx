@@ -1,12 +1,10 @@
 import { useState } from 'react'
-import CardAdvice from './CardAdvice'
+import LayoutApp from './components/LayoutApp'
 import './index.css'
 
 function App() {
   return (
-    <div className='grid w-full h-screen justify-items-center content-center bg-color-darkest'>
-      <CardAdvice></CardAdvice>
-    </div>
+      <LayoutApp></LayoutApp>
   )
 }
 
