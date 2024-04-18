@@ -1,6 +1,4 @@
-import { twMerge } from "tailwind-merge";
 import '../index.css'
-import { styles } from "../styles/cardAdviceStyles";
 import { useSlip } from "../hooks/useSlip";
 import { Slip } from "../models/models";
 import LoadingDots from "./LoadingDots";
@@ -22,13 +20,13 @@ export default function CardAdvice() {
         <div 
         className="
         relative grid justify-items-center content-center 
-        bg-color-lightest rounded-lg
+        bg-[#323a49] rounded-lg
         w-full h-full p-10
         lg:w-2/5 max-h-80 min-h-80 max-w-3/5 min-w-2/5
         ">
             <h3 
             className="
-            bg-green-500 text-green-color font-manrope tracking-widest text-center text-2xl p-4
+            text-[#52ffa8] font-manrope tracking-widest text-center text-2xl p-4
             lg:text-xl
             "> 
             {`ADVICE #${showNumberAdvice(slip)}`}
@@ -43,7 +41,7 @@ export default function CardAdvice() {
                     <LoadingDots></LoadingDots>
                     : 
                     <p className="
-                    font-manrope color-advice-text text-4xl leading-snug text-center p-4 bg-green-500
+                    font-manrope text-[#cee3e9] text-4xl leading-snug text-center p-4 
                     lg:text-2xl
                     ">
                         {`"${showAdvice(slip)}"`}
@@ -58,7 +56,7 @@ export default function CardAdvice() {
             <div 
             className="
             justify-items-center content-center grid
-            rounded-full green-dice-bg size-40 absolute -bottom-20 cursor-pointer" 
+            rounded-full bg-[#52ffa8] size-40 absolute -bottom-20 cursor-pointer" 
             onClick={() => {refreshSlip()}}>
                 <img className="size-16" src="../public/images/icon-dice.svg" alt="Roll the dice icon: Press this to obtain a new advice" />
             </div>

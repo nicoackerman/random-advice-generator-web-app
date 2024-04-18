@@ -1,21 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.color-advice-text {
-    color: hsl(193, 38%, 86%)
-}
-
-.bg-color-lightest {
-    background-color: hsl(217, 19%, 24%)
-}
-
-.bg-color-darkest {
-    background-color: hsl(218, 23%, 16%)
-}
-.text-green-color {
-    color: hsl(150, 100%, 66%)
-}
-
-.green-dice-bg {
-    background-color: hsl(150, 100%, 66%)
-}
