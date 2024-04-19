@@ -1,16 +1,29 @@
 import Card from "./Card"
+import { ReactTyped } from "react-typed";
+
+
+
 export default function LayoutApp() {
     return (
-        <div className='
-        grid h-dvh w-dvw justify-items-center content-center 
-        px-7 bg-[#1f2632]'>
-            <h1 className="
-            font-manrope text-[#cee3e9] text-lg leading-snug text-center grid-rows-2
-            lg:text-6xl lg:gap-4
+        <main className='
+        w-full h-lvh p-20 space-y-48
+        grid place-content-start
+        bg-[#1f2632]'>
+            <header 
+            className="
+            grid place-content-center
             ">
-                Advice Generator
-            </h1>
-            <Card></Card>
-        </div>
+                <ReactTyped strings={["Coded by NicolasCardenasL", "Design by Frontend Mentor"]}
+                typeSpeed={45} backSpeed={55}
+                backDelay={2000}
+                loop
+                className=" font-manrope text-[#cee3e9] text-6xl text-center"
+                >
+                </ReactTyped>
+            </header>
+            <section className="grid justify-items-center">
+              <Card></Card>
+            </section>
+        </main>
     );
 }
