@@ -1,4 +1,4 @@
-export default function LoadingDots() {
+export default function Loading() {
     return (
         <>
             <span className="loading loading-spinner text-success"></span>
