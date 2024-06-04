@@ -15,15 +15,15 @@ function showAdvice(slip: Slip |null) {
 
 function showNumberAdvice(slip: Slip |null) {
     if (slip!=null) {
-        return slip.id;
-    } else {return "Number Advice is not available now;"}
+        return `ADVICE #${slip.id}`;
+    } else {return "Check your internet connection..."}
 }     
 export default function CardAdvice() {
     const {refreshing, slip, refreshSlip} = useSlip();
     return (
         <section className="relative flex flex-col items-center bg-[#323a49] rounded-lg w-4/5 lg:w-3/6 h-full px-6 py-20 lg:px-8 lg:py-12 space-y-8 lg:space-y-2">
             <h4 className="text-[#52ffa8] font-manrope tracking-widest text-2xl lg:text-xl"> 
-            {`ADVICE #${showNumberAdvice(slip)}`}
+            {`${showNumberAdvice(slip)}`}
             </h4>
             <article className="
             w-full min-h-16 mx-h-full flex justify-center items-center
