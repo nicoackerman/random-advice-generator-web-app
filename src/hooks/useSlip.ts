@@ -13,12 +13,15 @@ export function useSlip() {
                 setSlip(newSlip);
                 localSlip=newSlip;
                 console.log(refreshing)
+                console.log(`newSlip: ${localSlip?.advice}`)
             }
         )
         setRefreshing(true)
+
+
         console.log(refreshing)
         console.log("refreshSlip has been executed")
-        console.log(`newSlip: ${localSlip}`)
+        console.log(`newSlip: ${localSlip?.advice}`)
     }
     
     useEffect(() => {
