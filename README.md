@@ -25,7 +25,7 @@ This web site was built using ReactJs. You shall install Node and npm in order t
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/NicolasCardenasL/random-advice-generator-web-app.git
+   git clone https://github.com/nicoackerman/random-advice-generator-web-app.git
    ```
 2. Install NPM packages
    ```sh
@@ -90,5 +90,4 @@ I've forward expectations on: focusing on state management with Redux or Zustand
 
 ## Author
 
-- GitHub - [NicolasCardenasL](https://github.com/NicolasCardenasL)
 - LinkedIn - [Nicolas Lopez](www.linkedin.com/in/nicolás-cárdenas-5305022a6)
